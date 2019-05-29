@@ -118,6 +118,33 @@ h1 {
   transition: 0.25s all;
   transform: translateY(-5px);
   cursor: 
+}
+
+
+.view_database_button {
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  padding: 15px 32px;
+  text-align: center;
+  background-color: royalblue;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 10px;
+  text-decoration: none;
+  line-height: 25px;
+}
+
+
+.view_database_button:hover {
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  transition: 0.25s all;
+  transform: translateY(-5px);
+  cursor: 
+}
 
 
 /*  */
