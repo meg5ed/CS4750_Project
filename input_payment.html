@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<meta charset="UTF-8">
+<title>Add payment</title>
+</head>
+<body>
+
+<div id="main-bg"></div>
+<div id="main-screen">
+
+<h1>Add payment</h1>
+
+<div class="input_box">
+  <form action="input_payment.php" method="post">
+
+    <select name="tenant_id">
+      <!-- NEED TO AUTO GENERATE -->
+      <option value="random1">Select tenant</option>
+      <option value="random1">Random1</option>
+      <option value="random2">Random2</option>
+      <option value="random3">Random3</option>
+    </select>
+    <select name="lease_id">
+      <!-- NEED TO AUTO GENERATE -->
+      <option value="random1">Select lease</option>
+      <option value="random1">Random1</option>
+      <option value="random2">Random2</option>
+      <option value="random3">Random3</option>
+    </select>
+
+    <input type="text" name="paymeny_amount" size="7" placeholder="Enter amount" />
+    <select name="month_for_payment">
+      <option value="no_input">Select month paid for</option>
+      <option value="JAN">January</option>
+      <option value="FEB">February</option>
+      <option value="MAR">March</option>
+      <option value="APR">April</option>
+      <option value="MAY">May</option>
+      <option value="JUN">June</option>
+      <option value="JUL">July</option>
+      <option value="AUG">August</option>
+      <option value="SEP">September</option>
+      <option value="OCT">October</option>
+      <option value="NOV">November</option>
+      <option value="DEC">December</option>
+    </select>
+
+    <select name="payment_month" style="width:30%">
+      <option value="no_input">Paid month</option>
+      <option value="JAN">January</option>
+      <option value="FEB">February</option>
+      <option value="MAR">March</option>
+      <option value="APR">April</option>
+      <option value="MAY">May</option>
+      <option value="JUN">June</option>
+      <option value="JUL">July</option>
+      <option value="AUG">August</option>
+      <option value="SEP">September</option>
+      <option value="OCT">October</option>
+      <option value="NOV">November</option>
+      <option value="DEC">December</option>
+    </select>
+
+    <select name="payment_date" id="payment_date_input" style="width:30%">
+      <option value="no_input">Paid date</option>
+      <script>
+        for (var i=1; i<=31; i++) {
+          document.getElementById("payment_date_input").innerHTML += "<option value=" + i + ">" + i + "</option>";
+        }
+      </script>
+    </select>
+
+    <select name="payment_year" id="payment_year_input" style="width:30%">
+      <option value="no_input">Paid year</option>
+      <script>
+        var y = new Date().getFullYear();
+        for (var i=y; i>=1900; i--) {
+          document.getElementById("payment_year_input").innerHTML += "<option value=" + i + ">" + i + "</option>";
+        }
+      </script>
+    </select>
+
+    <input type="submit" name="submit" value="Add payment" />
+  </form>
+
+</div>
+
+</div>
+
+</body>
+</html>
