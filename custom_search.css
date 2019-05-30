@@ -1,0 +1,80 @@
+h2 {
+  font-family: Impact;
+  font-size: 36px;
+  color: royalblue;
+  margin-bottom: 0px;
+}
+h3 {
+  font-family: Impact;
+  font-size: 24px;
+  color: rgb(100,100,100);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.search_box input[type="text"] {
+  height: 30px;
+  margin: 5px;
+  outline: none;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+}
+.search_box input[type="text"]::placeholder {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+}
+.search_box {
+  background-color: white;
+  width: 640px;
+  padding: 20px;
+  margin-left: calc(50% - 320px);
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  text-align: left;
+  max-height: 70%;
+  overflow-y: scroll;
+}
+.data_select {
+  border: 3px solid royalblue;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 5px;
+}
+.data_select:hover {
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  transition: 0.25s all;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.sub_data_select {
+  border: 3px solid rgb(215,215,215);
+  margin-left: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.sub_data_select {
+  font-family: Arial;
+  font-size: 20px;
+  color: rgb(175,175,175);
+  font-weight: bold;
+}
+.sub_data_select label {
+  margin-left: 5px;
+}
+.data_select {
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: bold;
+  color: royalblue;
+}
+.data_select input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.data_select input:hover, .data_select label:hover {
+  cursor: pointer;
+}

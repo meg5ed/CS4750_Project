@@ -2,17 +2,119 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="custom_search.css">
 <meta charset="UTF-8">
-<title>Custom Search</title>
+<title>Custom search</title>
 </head>
 <body>
+
 <div id="main-bg"></div>
 <div id="main-screen">
 
 <h1>Custom search</h1>
-<a href="add_data.html" class="create_database_button">Create<br>Database</a>
-<a href="view_data.html" class="view_database_button">View<br>Database</a>
+
+<div class="search_box" id="search_box">
+<h2>Show data for...</h2>
+
+<div class="data_select" id="tenant_trigger" onclick="trigger_tenant()">
+Tenant
+</div>
+
+<div class="data_select" id="property_trigger" onclick="trigger_property()">
+Property
+</div>
+
+<div class="data_select" id="payment_trigger" onclick="trigger_payment()">
+Payment
+</div>
+
+<div class="data_select" id="lease_trigger" onclick="trigger_lease()">
+Lease
+</div>
+
+<div class="data_select" id="unit_trigger" onclick="trigger_unit()">
+Unit
+</div>
+
+<h2>Where values equal...</h2>
 
 </div>
+
+</div>
+
+<script>
+// tenant_checked();
+// property_checked();
+// payment_checked();
+// lease_checked();
+// unit_checked();
+function trigger_tenant() {
+  document.getElementById("tenant_trigger").style.backgroundColor = "royalblue";
+  document.getElementById("tenant_trigger").style.color = "white";
+  document.getElementById("search_box").innerHTML += "<h3>Tenant</h3>";
+  var new_html = "</div>";
+
+  new_html += "<div class=\"sub_data_select\"><label for=\"tenant_firstname\">First name</label><input type=\"text\" name=\"tenant_firstname\" placeholder=\"Enter first name...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"tenant_lastname\">Last name</label><input type=\"text\" name=\"tenant_lastname\" placeholder=\"Enter last name...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"tenant_phone\">Name</label><input type=\"text\" name=\"tenant_phone\" placeholder=\"Enter phone number...\"></div>";
+
+  document.getElementById("search_box").innerHTML += new_html + "</div>";
+}
+
+function trigger_property() {
+  document.getElementById("property_trigger").style.backgroundColor = "royalblue";
+  document.getElementById("property_trigger").style.color = "white";
+  console.log("here");
+  document.getElementById("search_box").innerHTML += "<h3>Property</h3>";
+  var new_html = "</div>";
+
+  new_html += "<div class=\"sub_data_select\"><label for=\"property_name\">Name</label><input type=\"text\"  name=\"property_name\" placeholder=\"Enter name...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"property_address\">Address</label><input type=\"text\"  name=\"property_address\" placeholder=\"Enter address...\"></div>";
+
+  document.getElementById("search_box").innerHTML += new_html + "</div>";
+}
+
+function trigger_payment() {
+  document.getElementById("payment_trigger").style.backgroundColor = "royalblue";
+  document.getElementById("payment_trigger").style.color = "white";
+  console.log("here");
+  document.getElementById("search_box").innerHTML += "<h3>Payment</h3>";
+  var new_html = "</div>";
+
+  new_html += "<div class=\"sub_data_select\"><label for=\"payment_month\">Month</label><input type=\"text\"  name=\"payment_month\" placeholder=\"Enter month...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"payment_id\">ID</label><input type=\"text\"  name=\"payment_id\" placeholder=\"Enter payment ID...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"payment_tenant\">Tenant ID</label><input type=\"text\"  name=\"payment_tenant\" placeholder=\"Enter tenant ID...\"></div>";
+
+  document.getElementById("search_box").innerHTML += new_html + "</div>";
+}
+
+function trigger_lease() {
+  document.getElementById("lease_trigger").style.backgroundColor = "royalblue";
+  document.getElementById("lease_trigger").style.color = "white";
+  console.log("here");
+  document.getElementById("search_box").innerHTML += "<h3>Lease</h3>";
+  var new_html = "</div>";
+
+  new_html += "<div class=\"sub_data_select\"><label for=\"lease_id\">Lease ID</label><input type=\"text\"  name=\"lease_id\" placeholder=\"Enter lease ID...\"></div>";
+
+  document.getElementById("search_box").innerHTML += new_html + "</div>";
+}
+
+function trigger_unit() {
+  document.getElementById("unit_trigger").style.backgroundColor = "royalblue";
+  document.getElementById("unit_trigger").style.color = "white";
+  console.log("here");
+  document.getElementById("search_box").innerHTML += "<h3>Unit</h3>";
+  var new_html = "</div>";
+
+  new_html += "<div class=\"sub_data_select\"><label for=\"unit_id\">Unit ID</label><input type=\"text\"  name=\"unit_id\" placeholder=\"Enter unit ID...\"></div>";
+  new_html += "<div class=\"sub_data_select\"><label for=\"unit_property\">Property ID</label><input type=\"text\"  name=\"unit_property\" placeholder=\"Enter property ID...\"></div>";
+
+  document.getElementById("search_box").innerHTML += new_html + "</div>";
+}
+
+</script>
+
 </body>
+
 </html>
