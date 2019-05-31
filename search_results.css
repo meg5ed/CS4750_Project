@@ -1,0 +1,99 @@
+h2 {
+  font-family: Impact;
+  font-size: 36px;
+  color: royalblue;
+  margin-bottom: 0px;
+}
+h3 {
+  font-family: Impact;
+  font-size: 24px;
+  color: rgb(100,100,100);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.search_box input[type="text"] {
+  height: 30px;
+  margin: 5px;
+  outline: none;
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+}
+.search_box input[type="text"]::placeholder {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Helvetica Neue";
+}
+.search_box {
+  background-color: white;
+  width: 640px;
+  padding: 20px;
+  margin-left: calc(50% - 320px);
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  text-align: left;
+  max-height: 70%;
+  overflow-y: scroll;
+}
+
+.data_select input:hover, .data_select label:hover {
+  cursor: pointer;
+}
+
+.data_select {
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: bold;
+  color: royalblue;
+}
+.data_select input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.btn-group button {
+  background-color: royalblue; 
+  border: 1px;
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: left; 
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+}
+
+#users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 91%;
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
