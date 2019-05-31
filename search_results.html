@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="search_results.css">
 <meta charset="UTF-8">
 <title>Results</title>
 </head>
@@ -13,18 +14,45 @@
 
 
 
-<div class="input_box">
-  <form action="sarch_results.php" method="post">
-
-    <input type="text" name="property_name" size="50" placeholder="Enter property name" />
-    <input type="text" name="property_address" size="50" placeholder="Address" />
-    <input type="text" name="property_city" size="50" placeholder="City" />
-    <input type="text" name="property_state" size="20" placeholder="State" />
-    <input type="text" name="property_zip" size="5" placeholder="Zip" />
-
-    <input type="submit" name="submit" value="Add property" />
-  </form>
-
+<div class="search_box" id="search_box">
+	<!---Hard Code for noww, Auto Generate later--->
+ <table>
+    <tr>
+      <th>ID</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Phone Number</th>
+      <th>Occupation</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Washington</td>
+      <td>George</td>
+      <td>M</td>
+      <td>50</td>
+      <td>(123) 456 7890</td>
+      <td>President</td>
+    </tr>
+      <tr>
+      <td>2</td>
+      <td>Johnson</td>
+      <td>Matt</td>
+      <td>M</td>
+      <td>22</td>
+      <td>(142) 274 8272</td>
+      <td>Student</td>
+    </tr>
+      <tr>
+      <td>3</td>
+      <td>Adamns</td>
+      <td>Jeff</td>
+      <td>M</td>
+      <td>36</td>
+      <td>(353) 134 6321</td>
+      <td>Pilot</td>
+    </tr>
 </div>
 </body>
 </html>
