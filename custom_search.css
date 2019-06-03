@@ -36,6 +36,23 @@ h3 {
   max-height: 70%;
   overflow-y: scroll;
 }
+.search_button {
+  width: calc(100% - 10px);
+  padding: 10px;
+  background-color: royalblue;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+}
+.search_button:hover {
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  transition: 0.25s all;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
 .data_select {
   border: 3px solid royalblue;
   margin-left: 5px;
