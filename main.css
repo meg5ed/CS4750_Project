@@ -146,5 +146,26 @@ h1 {
   cursor: 
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:80%;
+  color: royalblue;
+  border: none;
+
+
+}
+
+td, th {
+  border: 1px solid royalblue;
+  text-align: left;
+  padding: 8px;
+  color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: royalblue;
+  color: black;
+}
 
 /*  */
