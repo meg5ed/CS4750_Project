@@ -1,6 +1,9 @@
-<!DOCTYPE html>
+<?php
+    include('check_logged.php');
+    ?>
 <html>
 <head>
+    
 <link rel="stylesheet" type="text/css" href="main.css">
 <meta charset="UTF-8">
 <title>Add tenant</title>
@@ -19,9 +22,9 @@
     <input type="text" name="last_name" size="20" placeholder="Last name" />
 
     <select name="tenant_gender">
-      <option value="random1">Select gender</option>
-      <option value="random1">M</option>
-      <option value="random2">F</option>
+      <option value="X">Select gender</option>
+      <option value="M">M</option>
+      <option value="F">F</option>
     </select>
 
     <select name="tenant_birth_month" style="width:30%">
