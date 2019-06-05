@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    include('check_logged.php');
+    ?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">

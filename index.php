@@ -1,3 +1,6 @@
+<?php
+    include('check_logged.php');
+    ?>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -15,13 +18,17 @@
     include('db_connect.php');
     
     
+    
     $mysqli->close();
     ?>
     <br>
-    <a href='custom_search.html'><button name = "leave"><h2>Search Data</h2></button></a>
+    <a href='custom_search.php'><button name = "leave">Search</button></a>
         <br>
         <br>
-    <a href='add_data.html'><button name = "leave"><h2>Insert Data</h2></button></a>
+    <a href='add_data.php'><button name = "leave">Insert Data</button></a>
+        <br>
+        <br>
+    <a href='logout.php'><button name = "leave" class='button'>Logout</button></a>
     </div>
     </body>
 </html>

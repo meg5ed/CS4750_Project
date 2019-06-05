@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<?php
+    include('check_logged.php');
+    ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main2.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
 <link rel="stylesheet" type="text/css" href="search_results.css">
 <meta charset="UTF-8">
@@ -184,7 +186,7 @@
       </div>
     <table class='btn-group'>
         <tr>
-          <td><a href='custom_search.html'><button name = "leave">Search Again</button></a></td>
+          <td><a href='custom_search.php'><button name = "leave">Search Again</button></a></td>
           <td><a href='index.php'><button name = "leave">Home</button></a></td>
           </tr>
     </table>
